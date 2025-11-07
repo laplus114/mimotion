@@ -126,7 +126,7 @@ def login(user, password, fake_ip):
     if is_phone  and ("+86" in user):
         user = user
     else:
-        user = "+86" + user
+        user = user
     headers = {
         "content-type": "application/x-www-form-urlencoded; charset=UTF-8",
         "user-agent": "MiFit6.14.0 (M2007J1SC; Android 12; Density/2.75)",
